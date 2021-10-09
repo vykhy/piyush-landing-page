@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+.scroll-snap-container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+nav{
+    color: aliceblue;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links{
+    display: flex;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-evenly;
+}
