@@ -27,6 +27,7 @@ nav{
     display: flex;
 }
 .container{
+    height: 100%;
     width: 80%;
     margin: 0 auto;
 }
@@ -39,4 +40,41 @@ nav{
 .cards-container{
     display: flex;
     justify-content: space-evenly;
+}
+.align-center-vertical{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.product-intro{
+    width: 100%;
+    display: flex;
+    top: 50%;
+}
+.product-logo{
+    flex: 5;
+}
+.product-about{
+    flex: 7;
+}
+.partner-container{
+    display: flex;
+}
+.join-team-container{
+    display: flex;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 8;
+}
+.footer-logo{
+    flex: 4;
 }
