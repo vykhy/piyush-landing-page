@@ -1,7 +1,9 @@
+/*universal*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 18px;
 }
 a{
     text-decoration: none;
@@ -11,35 +13,11 @@ section {
     scroll-snap-align: start;
     height: 100vh;
 }
-.scroll-snap-container{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-}
-
-nav{
-    color: aliceblue;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-}
-.nav-links{
-    display: flex;
-}
+/*helpers*/
 .container{
     height: 100%;
     width: 80%;
     margin: 0 auto;
-}
-.hero-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-}
-.cards-container{
-    display: flex;
-    justify-content: space-evenly;
 }
 .align-center-vertical{
     height: 100%;
@@ -47,6 +25,55 @@ nav{
     display: flex;
     align-items: center;
 }
+.scroll-snap-container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    flex: 1;
+    margin: .5rem;
+    min-height: 100%;
+}
+.card-img-container{
+    display: flex;
+    height: 75%;
+    align-items: center;
+}
+.card-img-container img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.card .caption{
+    padding: 3px;
+}
+/*navbar*/
+nav{
+    color: aliceblue;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links a{
+    margin: 0 8px;
+}
+/*hero section*/
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+/*product section*/
 .product-intro{
     width: 100%;
     display: flex;
@@ -61,10 +88,39 @@ nav{
 .partner-container{
     display: flex;
 }
+/*teams*/
 .join-team-container{
     display: flex;
 }
-
+/*partners page*/
+.partners-heading{
+    width: max-content;
+    margin: 0 auto;
+}
+.partners-info{
+    display: flex;
+    width: 100%;    
+}
+.partners-info div {
+    width: 50%;
+}
+/*register section*/
+.register-bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.register-bottom form {
+    width: 55%;
+}
+.form-group{
+    display: flex;
+    justify-content: space-between;
+}
+.register-bottom img{
+    width: 40%;
+}
+/*footer*/
 footer{
     background-color: black;
     color: white;
@@ -77,4 +133,11 @@ footer{
 }
 .footer-logo{
     flex: 4;
+}
+
+@media screen and (max-width: 720px) {
+    .container{
+        width: 95%;
+    }
+    
 }
