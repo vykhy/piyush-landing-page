@@ -25,9 +25,21 @@ p{
 h2{
     font-size: 3rem;
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 /*helpers*/
+.bg-1{
+    position: relative;
+    top: 0;
+}
+.bg-1 .bg-img{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
 .container{
     flex-grow: 1;
     display: flex;
@@ -68,7 +80,7 @@ h2{
 }
 .card .caption{
     padding: 3px;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
 }
@@ -78,7 +90,7 @@ nav{
     background-color: black;
     display: flex;
     padding: 4px 8%; 
-    max-height: 3rem;
+    max-height: 5rem;
     font-weight: 600;
 }
 nav .logo{
@@ -93,6 +105,7 @@ nav .logo{
 }
 .nav-links a{
     margin: 0 .7rem;
+    font-size: 1.2rem;
 }
 nav .logo img{
     height: 100%;
@@ -142,10 +155,21 @@ nav .logo img{
     margin-left: 2rem;
     flex: 7;
 }
-.product-about img{
-    width: 50%;
-    margin-left: 50%;
-    top: 50%;
+.product-about button{
+    cursor: pointer;
+    position: relative;
+    width: 17rem;
+    right: 0;
+    margin-left: 30%;
+    border: none;
+    background: none;
+}
+.product-about button p{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    left: .8rem;
+    top: 45%;
 }
 /*ABOUT SECTION*/
 .about-description{
@@ -195,12 +219,35 @@ nav .logo img{
     place-items: center;
 }
 .join-team-container .register img{
-    width: 100%;
+    width: 13rem;
 }
 .join-team-container .register::before{
     content: 'Register here';
     position: absolute;
     color: white;
+    z-index: 2;
+    font-size: 1.5rem;
+    height: 50%;
+    bottom: 0;
+}
+.join-team-info button{
+    background: none;
+    width: 13rem;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+.join-team-info button img{
+    width: 100%;
+}
+.join-team-info button p{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-weight: bold;
     z-index: 2;
 }
 /*partners page*/
@@ -221,11 +268,31 @@ nav .logo img{
 .partners-description{
     padding-left: 2rem;
 }
+.partner-info button{
+    background: none;
+    width: 13rem;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+.partner-info button img{
+    width: 100%;
+}
+.partner-info button p{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+}
+/*register section*/
 .register-text{
     font-size: 1.5rem;
     line-height: 2rem;
 }
-/*register section*/
 .register-bottom{
     display: flex;
     width: 100%;
@@ -358,15 +425,31 @@ footer h3{
 .popup-bottom{
     margin-top: 2rem;
     width: 100%;
-    display: grid;
-    place-items: center;
+}
+.popup-bottom form{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.popup-bottom input{
+    border-radius: .7rem;
+    width: 70%;
+    padding: .6rem .4rem;
+}
+.popup-bottom button{
+    border-radius: .7rem;
+    width: 15%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: #30b8f4;
+    padding: .3rem .4rem;
 }
 @media screen and (max-width: 720px) {
     html{
         font-size: 80%;
     }
     .container{
-        width: 95%;
+        width: 90%;
     }
     
 }
