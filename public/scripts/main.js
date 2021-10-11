@@ -71,3 +71,18 @@ class TypeWriter {
     // Init TypeWriter
     new TypeWriter(txtElement, sentences, wait);
   }
+
+  /*POPUP*/
+  const popupTrigger = document.querySelector('.notify')
+  const popup = document.querySelector('.popup-bg')
+
+  function removePopup(e){
+    if(e.target.classList.contains('align-center-vertical')){
+      popup.classList.remove('popup-active')
+    }
+  }
+  popupTrigger.addEventListener('click',()=> {
+    popup.classList.add('popup-active')
+  })
+
+  popup.addEventListener('click',(e)=> removePopup(e))
