@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- icons -->
+    <link rel="stylesheet" href="/public/fontawesome-free-5.15.4-web/css/all.min.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- custom stylesheet and script -->
     <link rel="stylesheet" href="/public/styles/style.css">
-    <script src="/public/scripts/main.js" defer></script>
+    <script src="/public/scripts/main.js" defer type="module"></script>
 
     <title>Document</title>
 </head>
@@ -14,22 +23,22 @@
     <div class="scroll-snap-container">
         <!-- WELCOME SECTION -->
         <section>
-
-            <div class="container">
             <!-- NAVBAR -->
             <nav>
-                <div class="logo">Logo</div>
+                <div class="logo">
+                    <img src="/public/images/logo.png" alt="">
+                </div>
                 <div class="nav-links">
-                    <a href="">
+                    <a href="/index.html">
                         <div class="link">Home</div>
                     </a>
-                    <a href="">
+                    <a href="#about">
                         <div class="link">About Us</div>
                     </a>
-                    <a href="">
+                    <a href="/partners.html">
                         <div class="link">Partners</div>
                     </a>
-                    <a href="">
+                    <a href="#join-team">
                         <div class="link">Join Us</div>
                     </a>
                     <a href="">
@@ -37,11 +46,13 @@
                     </a>
                 </div>
             </nav>
+
+            <div class="container">
                 <div class="align-center-vertical">
                     <div class="hero-container">
                         <div class="tagline">
                             The world is waiting to <br>
-                            <span class="large"><span class="green">QUIT ADJUSTING</span> WITH FOOD</span><br>
+                            <span class="large"><span class="green">QUIT ADJUSTING</span> <span class="dark-gray">WITH FOOD</span></span><br>
                             while travelling
                         </div>
                         <div class="hero-questions">
@@ -57,11 +68,11 @@
             <div class="container">
                 <div class="align-center-vertical">
                     <div class="problems-container">
-                        <h3>Do you love to travel?</h3>
+                        <h2>Do you love to travel?</h2>
                         <div class="cards-container">
                             <div class="card">
                                 <div class="card-img-container">                                    
-                                    <img src="" alt="">
+                                    <img src="/public/images/review.png" alt="">
                                 </div>
                                 <div class="caption">Unsatisfied with random reviews?</div>
                             </div>
@@ -93,7 +104,7 @@
                         <div class="cards-container">
                             <div class="card">
                                 <div class="card-img-container">
-                                    <img src="" alt="">
+                                    <img src="/public/images/screens.png" alt="">
                                 </div>
                                 <div class="caption">
                                     Our algorithm helps you find food matched to your taste
@@ -101,7 +112,7 @@
                             </div>
                             <div class="card">
                                 <div class="card-img-container">
-                                    <img src="" alt="">
+                                    <img src="/public/images/boy-on-phone.gif" alt="">
                                 </div>
                                 <div class="caption">
                                     Locate every spot serving food on your route
@@ -109,7 +120,7 @@
                             </div>
                             <div class="card">
                                 <div class="card-img-container">
-                                    <img src="" alt="">
+                                    <img src="/public/images/car.gif" alt="">
                                 </div>
                                 <div class="caption">
                                     Order On-the-Go as you reach the location
@@ -127,21 +138,27 @@
             <div class="container">
                 <div class="align-center-vertical">
                     <div class="product-intro">
-                        <div class="product-logo">Logo</div>
+                        <div class="product-logo">
+                            <img src="/public/images/bg-2.png" alt="">
+                        </div>                            
                         <div class="product-about">
                             Introducing World's 1st Food Search App for travellers
+                            <a href="">
+                                <img src="/public/images/button-top.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>                
             </div>
         </section>
         <!-- ABOUT SECTION -->
-        <section>
+        <section id="about">
             <div class="container">
                 <div class="align-center-vertical">
                     <div class="about-container">
                         <h2>About Us</h2>
                         <p class="about-description">
+                            Namaste <img src="" alt=""> <br>
                             UFF is <span class="about-bold">World's First Food Search App</span> helping travellers to quit 
                             adjusting with food during travel. We're a team of extremely motivated individuals with an undying
                             love for food, who love to travel. <br>
@@ -161,9 +178,11 @@
             <div class="container">
                 <div class="align-center-vertical">
                     <div class="partner-container">
-                        <div class="partner-image">Image</div>
+                        <div class="partner-image">
+                            <img src="/public/images/chef.png" alt="">
+                        </div>
                         <div class="partner-info">
-                            <h3>Become a partner</h3>
+                            <h2>Become a partner</h2>
                             <p class="partner-description">
                                 We empower growth of your restaurant without any 
                                 discounts, by our services and we earn only after you do.
@@ -175,36 +194,64 @@
             </div>
         </section>
         <!-- JOIN OUR TEAM CONTAINER -->
-        <section>
+        <section id="join-team">
             <div class="container">
                 <div class="align-center-vertical">
                     <div class="join-team-container">
                         <div class="join-team-info">
-                            <h3>Join our team</h3>
+                            <h2>Join our team</h2>
                             <p class="join-team-description">
                                 We host training and internship programs to find
                                 the bet talent for our team, offering a once in a lifetime
                                 working experience and contributing to changing the world
                                 and pushing the human race forward.
                             </p>
+                            <div class="register">
+                                <img src='/public/images/button-top-dark.png' alt="">
+                            </div>                       
                         </div>
-                        <div class="join-team-img">Image</div>
+                        <div class="join-team-img">
+                            <img src="/public/images/business-woman.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         <footer>
-            <div class="footer-text">
-                <div class="footer-about">
-                    <h3>About Us</h3>
-                    <p>
-                        UFF is amazing
-                    </p>
+            <div class="top">
+                <div class="footer-text">
+                    <div class="footer-about">
+                        <h3>About Us</h3>
+                        <p>
+                            <span class="footer-bold">UFF</span>  is <span class="footer-bold"> World's First Food Search App</span> helping travellers to quit adjusting with
+                            food during travel, introducing Food Tourism to change the way you eat
+                            whenever you travel!
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Contact Us</a>
+                        <a href="">Join Us</a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
+                <div class="footer-logo">
+                    <div class="top">
+                        <img src="/public/images/bg-2.png" alt="">
+                    </div>
+                    <div class="footer-socials">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
                 </div>
             </div>
-            <div class="footer-logo">Logo</div>
+            
+            <div class="copyright">
+                <span class="copy">&copyUFF 2021</span> All rights reserved
+            </div>
         </footer>
         </section>
     </div>
