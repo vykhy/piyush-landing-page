@@ -4,6 +4,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+ sup {
+    /* Specified in % so that the sup/sup is the right size relative to the surrounding text */
+    font-size: 75%;
+  
+    /* Zero out the line-height so that it doesn't interfere with the positioning that follows */
+    line-height: 0;
+  
+    /* Where the magic happens: makes all browsers position the sup/sup properly, relative to the surrounding text */
+    /*position: relative;
+  
+    /* Note that if you're using Eric Meyer's reset.css, this is already set and you can remove this rule 
+    vertical-align: super;*/
+  }
+  
+  /*sup {
+    /* Move the superscripted text up 
+    top: -0.5em;
+  } */
+  
 html{
     font-size: 16px(100%);
     font-family: 'Montserrat', sans-serif;
@@ -23,7 +42,7 @@ p{
     line-height: 2.6rem;
 }
 h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
@@ -120,6 +139,7 @@ nav .logo img{
 }
 .hero-questions{
     font-size: 2rem;
+    font-weight: 500;
     padding-top: 2rem;
 }
 .dark-gray{
@@ -148,17 +168,26 @@ nav .logo img{
     object-fit: contain;
 }
 .product-about{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex: 7;
+    font-weight: 600;
+}
+.made-in-india-container{
+    position: relative;
+}
+.product-about .made-in-india{
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    width: 6rem;
+}
+.product-about p{
     font-size: 2.5rem;
     margin-left: 2rem;
-    flex: 7;
 }
 .product-about button{
     cursor: pointer;
     position: relative;
-    width: 17rem;
+    width: 18rem;
     right: 0;
     margin-left: 30%;
     border: none;
@@ -168,13 +197,16 @@ nav .logo img{
     position: absolute;
     color: white;
     font-weight: bold;
-    left: .8rem;
+    font-size: 1.5rem;
     top: 45%;
 }
 /*ABOUT SECTION*/
 .about-description{
     font-size: 1.3rem;
     font-weight: 500;
+}
+.about-description img{
+    height: 1.9rem;
 }
 .about-bold{
     font-weight: 800;
